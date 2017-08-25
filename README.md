@@ -1,6 +1,6 @@
 # Anonymous_chat
 ### Node.js anonymous chat application 
-### This is a Node.js chat application developed using express and Socket.io 
+This is a Node.js chat application developed using express and Socket.io 
 
 ## Application features
 1. Uses functionality of sockets to emit messages to other users
