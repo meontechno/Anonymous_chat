@@ -1,0 +1,39 @@
+extends layout
+
+block content
+        .row(id = 'name_row')
+            .chat
+                .heading
+                    h3 Anonymous Chat V1.0
+                .row                    
+                    .column.large-8
+                        p(id='name_error') Enter your name
+                form(id='send_name')
+                    input.username(type='text', id='user_name', placeholder='Your name here...')                    
+                    .row.send_msg
+                        .column.large-6
+                            button.alert.button.send1_message( type= 'reset', id='clear') Clear name
+                        .column.large-6
+                            button.alert.button.send1_message Send name
+        .row(id = 'message_row')
+            .column.large-2(style="margin-top:2em;")                
+                p(id='usersonlineheading') Do not refresh the page! you will be logged out! <br><br><br>Users online...
+                p(id = 'usersonline')
+                    
+            .chat
+                .heading
+                    h3 Anonymous Chat V1.0
+                p(id = 'chatstatus') Connected                        
+                form(id='send_message')
+                    input.username(type='text', id='secret_name', placeholder='your secret friend name or none for groupchat')
+                    .message_area(id='chat')
+                    textarea(id='message', placeholder='Type your message here...')
+                    .row.send_msg
+                        .column.large-6
+                            button.alert.button.send1_message(id = 'clear', type='reset') Clear Message
+                        .column.large-6
+                            button.alert.button.send1_message Send Message
+            
+        script(src='/socket.io/socket.io.js')
+        script(src='/javascripts/vendor/jquery.js')      
+        script(src='/javascripts/sock.js')

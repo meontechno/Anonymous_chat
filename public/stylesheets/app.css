@@ -1,0 +1,156 @@
+body {    
+    background: url("../images/back4.jpg");       
+}
+
+.button.alert {
+    font-family: open sans;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+}
+
+.button.alert:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button.alert:focus{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#message_row{
+    display: none;
+}
+
+.message_area {    
+    height: 200px;
+    overflow-y: scroll;    
+    border: none;
+    padding: 10px;   
+    
+}
+
+#usersonlineheading, #usersonline{
+    color:blue;
+    color: rgba(255,255,255,0.9);
+    
+    font-weight: light;
+}
+
+.chatstatus {
+    font-size: 0.9rem;
+    font-weight: light;
+    color: rgba(255,255,255,0.9);
+}
+
+#name_error, .statuss, .reload a {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgba(255,255,255,0.7);
+}
+
+.sec_msg{
+    color: green;
+}
+
+.err_msg{
+    color: red;
+}
+
+
+textarea {
+    height: 80px;
+    margin-top: 20px;
+}
+
+
+.chat{    
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 3% 5%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    
+    background-image: url("../images/gra3.jpg");
+    font-family: open sans;
+    font-weight: light;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 5px 65px #acacac;
+}
+
+.chat_view {
+    margin: 5px 0px;
+}
+
+.reload{
+    font-size: 0.9rem;
+    text-align: right;
+    font-weight: light;
+}
+
+h3{
+    font-family: open sans;
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
+}
+
+.heading{
+    margin-bottom: 20px;
+}
+
+.message_area, [type = 'text'], textarea {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    border : solid;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255,255,255,0.7); 
+}
+
+[type = 'text']:focus, textarea:focus{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    color: rgba(255,255,255,0.9); 
+}
+
+.chat_name, [type = 'text'], textarea {
+    font-weight: normal;
+    color: rgba(255,255,255,0.9);
+}
+
+
+input::placeholder, textarea::placeholder {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    font-family: open sans;
+    color: rgba(255,255,255,0.4);
+}
+
+.message_area::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+@media (max-width: 415px){   
+    
+    .chat{    
+        margin-left: 0%;
+        margin-right: 0%; 
+        margin-bottom: 1em;
+    }
+    #usersonlineheading, #usersonline{
+        text-align: center;
+    }
+}
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "Anonymous chat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {   
+    "debug": "2.6.8",
+    "express": "4.15.4",   
+    "pug": "2.0.0-rc.3",
+    "serve-favicon": "2.4.3",
+    "socket.io": "2.0.3",
+    "npm": "5.3.0"
+  },
+  "engines": {
+    "node": "8.1.2"
+  },
+  "author": "Nithesh Singh",
+  "license": "ISC",
+  "main": "app.js",
+  "description": "free online anonymous chat"
+}
