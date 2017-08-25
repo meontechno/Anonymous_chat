@@ -5,9 +5,9 @@
   "scripts": {
     "start": "node app.js"
   },
-  "dependencies": {   
+  "dependencies": {
     "debug": "2.6.8",
-    "express": "4.15.4",   
+    "express": "4.15.4",
     "pug": "2.0.0-rc.3",
     "serve-favicon": "2.4.3",
     "socket.io": "2.0.3",
